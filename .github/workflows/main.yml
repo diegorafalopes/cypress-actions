@@ -6,7 +6,7 @@ jobs:
   cy-electron-tests:
     runs-on: ubuntu-latest
     steps: 
-      - name: get code
+      - name: Checkout
       - uses: actions/checkout@v4.2.2
 
       - name: install dependencies
