@@ -1,16 +1,16 @@
-name: cy actions tests
+name: Cypress Tests
 
 on: [push]
 
 jobs:
-  cy-electron-tests:
+  cypress-electron-tests:
     runs-on: ubuntu-latest
     steps: 
-      - name: Checkout
+      - name: Get code
       - uses: actions/checkout@v4.2.2
 
-      - name: install dependencies
+      - name: Install dependencies
       - run: yarn install
 
-      - name: run e2e tests
+      - name: Run E2E tests
       - run: yarn cypress run
